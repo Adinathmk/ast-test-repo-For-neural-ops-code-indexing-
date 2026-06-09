@@ -5,5 +5,5 @@ class LogProcessor:
     def __init__(self, endpoint: str):
         self.endpoint = endpoint
     def process_incoming_stream(self, data: list):
-        calculate_metrics(1,2)
+        calculate_metrics(1,3)
         print(f"Processing {len(data)} items...")
