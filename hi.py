@@ -1,3 +1,3 @@
 def hiii:
   print('hello')
-  a=1
+  a=2
