@@ -1,0 +1,30 @@
+{
+  "service_name": "dummy-order-service",
+  "environment": "production",
+  "timestamp": "2026-06-12T15:20:00Z",
+  "error_type": "TypeError",
+  "error_message": "'NoneType' object is not subscriptable",
+  "crash_file": "services.py",
+  "crash_line": 12,
+  "crash_method": "process_order",
+  "severity": "high",
+  "stack_frames": [
+    {
+      "file": "main.py",
+      "line": 14,
+      "method": "create_order",
+      "module": "main"
+    },
+    {
+      "file": "services.py",
+      "line": 12,
+      "method": "process_order",
+      "module": "services"
+    }
+  ],
+  "context_logs": [
+    {"timestamp": "2026-06-12T15:19:55Z", "level": "INFO", "message": "Received order request from user user_123"},
+    {"timestamp": "2026-06-12T15:19:56Z", "level": "DEBUG", "message": "Attempting to apply discount code 'INVALID99'"},
+    {"timestamp": "2026-06-12T15:20:00Z", "level": "ERROR", "message": "Failed to process order for user user_123: 'NoneType' object is not subscriptable"}
+  ]
+}
